@@ -1,0 +1,41 @@
+{
+  "version": 2,
+  "builds": [{ "src": "src/index.js", "use": "@now/node-server" }],
+  "routes": [
+    {
+      "src": "/incidents",
+      "dest": "src/index.js",
+      "methods": ["POST"]
+    },
+    {
+      "src": "/ongs",
+      "dest": "src/index.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/profile",
+      "dest": "src/index.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/sessions",
+      "dest": "src/index.js",
+      "methods": ["POST"]
+    },
+    {
+      "src": "/incidents?page=1",
+      "dest": "src/index.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/incidents/6",
+      "dest": "src/index.js",
+      "methods": ["DELETE"]
+    },
+    {
+      "src": "/ongs",
+      "dest": "src/index.js",
+      "methods": ["POST"]
+    }
+  ]
+}
